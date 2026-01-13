@@ -1,15 +1,29 @@
-/node_modules
-/public/hot
-/public/storage
+# ============================================
+# SENSITIVE FILES - DO NOT COMMIT
+# ============================================
+
+# Environment configuration (contains database credentials)
+.env
+.env.backup
+.env.production
+.env.local
+
+# Storage directories (cache, logs, sessions, views)
 /storage/*.key
 /storage/
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Dependencies (should be installed via composer/npm on server)
 /vendor
-/.idea
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-.env
+/node_modules
+
+# ============================================
+# UPLOADED FILES & GENERATED ASSETS
+# ============================================
+
 /public/uploads/business_logos
 /public/uploads/documents
 /public/uploads/img
@@ -17,12 +31,34 @@ npm-debug.log
 /public/uploads/invoice_logos
 /public/uploads/UltimatePOS
 /public/uploads/temp
+/public/storage
+/public/hot
 /public/css/
 /public/fonts/
 /public/images/
 /public/modules/
 /public/mix-manifest.json
-.scribe
 /public/docs
 /public/js/skins/
 /public/js/icons/
+
+# ============================================
+# IDE & DEVELOPMENT FILES
+# ============================================
+
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.scribe
+
+# ============================================
+# OS FILES
+# ============================================
+
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
