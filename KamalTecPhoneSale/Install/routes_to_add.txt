@@ -1,0 +1,9 @@
+﻿// Kamal Tec Phone Sale Routes
+Route::resource('kamal-tec-sales', \App\Http\Controllers\KamalTecSaleController::class);
+Route::get('kamal-tec-sales-export', [\App\Http\Controllers\KamalTecSaleController::class, 'export'])->name('kamal-tec-sales.export');
+Route::get('kamal-tec-sales/{sale_id}/add-payment', [\App\Http\Controllers\KamalTecPaymentController::class, 'addPayment'])->name('kamal-tec-sales.add-payment');
+Route::post('kamal-tec-sales/{sale_id}/payments', [\App\Http\Controllers\KamalTecPaymentController::class, 'storePayment'])->name('kamal-tec-sales.store-payment');
+Route::get('kamal-tec-payments/{payment_id}/edit', [\App\Http\Controllers\KamalTecPaymentController::class, 'editPayment'])->name('kamal-tec-payments.edit');
+Route::put('kamal-tec-payments/{payment_id}', [\App\Http\Controllers\KamalTecPaymentController::class, 'updatePayment'])->name('kamal-tec-payments.update');
+Route::delete('kamal-tec-payments/{payment_id}', [\App\Http\Controllers\KamalTecPaymentController::class, 'destroy'])->name('kamal-tec-payments.destroy');
+Route::get('kamal-tec-sale-report', [\App\Http\Controllers\KamalTecSaleReportController::class, 'index'])->name('kamal-tec-sale-report');

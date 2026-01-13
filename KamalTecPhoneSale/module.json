@@ -1,0 +1,25 @@
+﻿{
+    "description":  "Kamal Tec Phone Sale module for recording 3rd-party phone sales with commission tracking",
+    "files":  [
+
+              ],
+    "aliases":  {
+
+                },
+    "order":  0,
+    "alias":  "kamaltecsale",
+    "name":  "KamalTecPhoneSale",
+    "keywords":  [
+                     "phone",
+                     "sale",
+                     "commission",
+                     "kamal tec"
+                 ],
+    "active":  1,
+    "providers":  [
+
+                  ],
+    "requires":  [
+
+                 ]
+}

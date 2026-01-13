@@ -1,0 +1,44 @@
+KAMAL TEC PHONE SALE MODULE - COMPLETE FILE LIST
+==================================================
+
+NEW FILES TO CREATE:
+--------------------
+
+1. MODELS (app/)
+   - app/KamalTecSale.php
+   - app/KamalTecSaleLine.php
+   - app/KamalTecPayment.php
+
+2. CONTROLLERS (app/Http/Controllers/)
+   - app/Http/Controllers/KamalTecSaleController.php
+   - app/Http/Controllers/KamalTecPaymentController.php
+   - app/Http/Controllers/KamalTecSaleReportController.php
+
+3. EXPORT CLASS (app/Exports/)
+   - app/Exports/KamalTecSalesExport.php
+
+4. VIEWS (resources/views/kamal_tec_sale/)
+   - resources/views/kamal_tec_sale/index.blade.php
+   - resources/views/kamal_tec_sale/create.blade.php
+   - resources/views/kamal_tec_sale/edit.blade.php
+   - resources/views/kamal_tec_sale/show.blade.php
+   - resources/views/kamal_tec_sale/report.blade.php
+   - resources/views/kamal_tec_sale/partials/add_payment.blade.php
+   - resources/views/kamal_tec_sale/partials/edit_payment.blade.php
+
+5. MIGRATIONS (database/migrations/)
+   - database/migrations/2025_01_15_120000_create_kamal_tec_sales_table.php
+   - database/migrations/2025_01_15_120001_create_kamal_tec_sale_lines_table.php
+   - database/migrations/2025_01_15_120002_create_kamal_tec_payments_table.php
+   - database/migrations/2025_01_20_120000_add_kt_invoice_no_to_kamal_tec_sales_table.php
+
+FILES TO MODIFY:
+----------------
+
+1. routes/web.php
+   - Add Kamal Tec routes section
+
+2. app/Http/Middleware/AdminSidebarMenu.php
+   - Add Kamal Tec menu items
+
+TOTAL FILES: 18 new files + 2 files to modify = 20 files
